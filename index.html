@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="imgHolder">
+        <article> 
+            <div class="btn" id="move"></div>
+            <div id="icons"> 
+                <div class="btn" id="max"></div>
+                <div class="btn" id="min"></div>
+            </div>
+            <div class="group">
+                <canvas id="canvas" name="canvas"></canvas>
+                <label for="canvas" class="label-file">Haz click aquí para recortar la imagen</label>
+            </div>
+        </article>
+    </div>
+
+    <br>
+    <footer>
+        <label for="uploader">Select file: </label>
+        <input type="file" id="uploader" /> 
+        <button id="hidden">Download</button>
+    </footer>
+
+    <img src="imageHolder.png" id="p" hidden>
+    <script src="main.js"></script>
+</body>
+</html>
