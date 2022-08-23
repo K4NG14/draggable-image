@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../carpeta sin título/pch-portfolio/src/assets/font"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}

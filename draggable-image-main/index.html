@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Cropper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onselectstart = 'return false'></body>
+    <h1 >Image Cropper</h1>
+    <br>
+    <div id="imgHolder">
+        <article> 
+            <div class="btn" id="move"></div>
+            <div id="icons"> 
+            </div>
+            <div class="group">
+                <canvas id="canvas" name="canvas"></canvas>
+                <button id="input-file"></button>
+                <label for="input-file" class="label-file">Haz click aquí para recortar la imagen</label>
+            </div>
+        </article>
+    </div>
+<div id="modal">
+        <div class="container">
+            <div class="image-container">
+                <div class="image-workspace">
+                    <img src="" alt="">
+                    <span>Image Work Space</span>
+                </div>
+            </div>
+            <div class="preview-container">
+                <div class="preview-cover">
+                    <div class="img-preview" style="height: 9rem; width: 16rem"></div>
+                    <span>Image Preview</span>
+                </div>
+            </div>
+            
+            <div class="action-button">
+                
+                <button class="download">Listo</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <label for="uploader">Select file: </label>
+        <input type="file" id="uploader" /> 
+        <button id="hidden">Download</button>
+        <label for="size">Size:   </label> 
+        <input type="range" name="size" id="size" min="100" max="300" value="200">
+        <span id="rangeValue">200 px</span>
+        <button id="invert">Invert Image Colors: </button>
+    </footer>
+
+    <br>
+
+    <div id="modal">
+        <div class="container">
+            <div class="image-container">
+                <div class="image-workspace">
+                    <img src="" alt="">
+                    <span>Image Work Space</span>
+                </div>
+            </div>
+            <div class="preview-container">
+                <div class="preview-cover">
+                    <div class="img-preview" style="height: 9rem; width: 16rem"></div>
+                    <span>Image Preview</span>
+                </div>
+            </div>
+            
+            <div class="action-button">
+                
+                <button class="download">Listo</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <img src="imageHolder.png" id="p" hidden>
+    <script src="main.js"></script>
+    <script src="cropper.js"></script>
+    <script src="jquery.js"></script>
+</body>
+</html>
